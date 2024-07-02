@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     env:  # Define diff target here
       # The page to visit
-      URL: 'https://sebbacon.github.io/'
+      URL: 'https://www.england.nhs.uk/publication/community-pharmacy-advanced-service-specification-nhs-pharmacy-first-service/'
       # The XPath for the content you're interested in
       # (try right-clicking the element in the inspector in Chromium)
-      XPATH: '/html/body/header/div/a'
+      XPATH: '/html/body/main'
       # A filename where we will save the contents of that XPath
-      FILE_PATH: 'sebbacon.html'
+      FILE_PATH: 'pharmacy-first.html'
 
     steps:
     - name: Check out code
